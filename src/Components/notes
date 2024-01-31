@@ -1,0 +1,62 @@
+<!-- <MDBTable align='middle'>
+      <MDBTableHead>
+        <tr>
+          
+        <th scope='col'>id</th>
+          <th scope='col'>Name</th>
+          <th scope='col'>Adress</th>
+          <th scope='col'>Actions</th>
+          <th scope='col'>Actions</th>
+         
+        </tr>
+      </MDBTableHead>
+      <MDBTableBody>
+        
+        {
+          viewData.map((item)=>(
+            <tr>
+            <td>
+              <p>{item.id}</p>
+            </td>
+        <td>
+          <div className='d-flex align-items-center'>
+            
+            <div className='ms-3'>
+              <p className='fw-bold mb-1'>{item.name}</p>
+              <p className='text-muted mb-0'>{item.email}</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p className='fw-normal mb-1'>{item.address}</p>
+          <p className='text-muted mb-0'>{item.street}</p>
+        </td>
+
+        
+        <td>
+        
+            <Link to={`/profile/${item.id}`}>
+            View Profile
+            </Link>
+           
+          
+        </td>
+        <td>
+          <MDBBtn onClick={()=>delcon(item.id)} color='danger' rounded size='sm'>
+            Delete
+          </MDBBtn>
+        </td>
+      </tr>
+          ))
+        }
+        
+      </MDBTableBody>
+    </MDBTable> -->
+
+
+
+
+    <button  className='text-center  btn rounded-pill btn-danger text-light m-3'>Delete</button>
+    <MDBCardImage className='p-3' src={item.image} style={{borderRadius:'50%',overflow:'hidden',width:'200px',height:'200px',marginLeft:'50px'}}></MDBCardImage>
+
+    <Link to={`/profile/${item.id}`}>
